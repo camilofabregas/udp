@@ -1,0 +1,7 @@
+from src.config.config import Config
+from src.interfaz.interfaz import Interfaz
+
+interfaz = Interfaz('download')
+config = Config(interfaz)
+objeto = config.identificar_tipo_config()
+objeto.run()
